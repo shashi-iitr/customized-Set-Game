@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Deck.h"
 @interface CustomizedMatchismoViewController : UIViewController
-
+- (Deck *)creatDeck;
+- (void)updateCell:(UICollectionViewCell *)cell usingCard:(Card *)card;
+@property(nonatomic) NSUInteger startingCardCount;
 @end
